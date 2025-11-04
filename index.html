@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms culturama</title>
+</head>
+
+<body>
+    <header>
+        <h1>Pesquisa Online Culturama</h1>
+    </header>
+
+    <section>
+        <form action="#" method="get">
+
+            <!-- Dados pessoais -->
+            <fieldset>
+                <legend>Dados pessoais</legend>
+            <label for="UserName">Nome</label>
+            <input type="text" name="UserName" placeholder="Nome e sobrenome" required>
+            <br>
+            <label for="userAge"></label>
+            <input type="number" name="userAge" placeholder="Digite sua idade" min="12" max="100" required>
+            <br>
+            <label for="birthDate"></label>
+            <input type="date" name="birthDate" required>
+            <br>
+            <label for="userEmail"></label>
+            <input type="email" name="userEmail" placeholder="E-mail" required>
+            <br>
+            <label for="userPhoneNumber"></label>
+            <input type="tel" name="userPhoneNumber" pattern="[0-9] {11}" placeholder="Numero celular">
+            <br>
+            <label for="userImage">Upload de foto</label>
+            <!-- para definir qual tipo de imagem: accept="image/png, image/jpeg" -->
+            <input type="file" accept="image/*" name="userImage">
+            <br>
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
