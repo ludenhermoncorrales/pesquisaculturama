@@ -17,40 +17,40 @@
             <!-- Dados pessoais -->
             <fieldset>
                 <legend>Dados pessoais</legend>
-                <label for="UserName"></label>
-                <input type="text" name="UserName" placeholder="Nome e sobrenome" required>
+                <label for="name">Nome</label>
+                <input id="name" type="text" name="UserName" placeholder="Nome e sobrenome" required>
                 <br>
-                <label for="userAge"></label>
-                <input type="number" name="userAge" placeholder="Digite sua idade" min="12" max="100" required>
+                <label for="age">Idade</label>
+                <input id="age" type="number" name="userAge" placeholder="Idade" min="12" max="100" required>
                 <br>
-                <label for="birthDate"></label>
-                <input type="date" name="birthDate" required>
+                <label for="date">Data de Nascimento</label>
+                <input id="date" type="date" name="birthDate" required>
                 <br>
-                <label for="userEmail"></label>
-                <input type="email" name="userEmail" placeholder="E-mail" required>
+                <label for="email">E-mail</label>
+                <input id="email" type="email" name="userEmail" placeholder="E-mail" required>
                 <br>
-                <label for="userPhoneNumber"></label>
-                <input type="tel" name="userPhoneNumber" pattern="[0-9] {11}" placeholder="Numero celular">
+                <label for="phoneNumber">Telefone</label>
+                <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9] {11}" placeholder="Numero celular">
                 <br>
-                <label for="userImage">Upload de foto</label>
+                <label for="image">Upload de foto</label>
                 <!-- para definir qual tipo de imagem: accept="image/png, image/jpeg"  -->
-                <input type="file" accept="image/*" name="userImage">
+                <input id="image" type="file" accept="image/*" name="userImage">
                 <br>
             </fieldset>
 
             <fieldset>
                 <legend>Perfil</legend>
 
-                <input type="radio" name="userGender" value="feminino" required>
-                <label for="userGender">Feminino</label>
-                <input type="radio" name="userGender" value="masculino" required>
-                <label for="userGender">Masculino</label>
-                <input type="radio" name="userGender" value="notInformed">
-                <label for="userGender">Prefirino não informar</label>
+                <input id="fem" type="radio" name="userGender" value="feminino" required>
+                <label for="fem">Feminino</label>
+                <input id="masc" type="radio" name="userGender" value="masculino" required>
+                <label for="masc">Masculino</label>
+                <input id="notInformed" type="radio" name="userGender" value="usernotInformed">
+                <label for="notInformed">Prefirino não informar</label>
                 <br>
-                <label for="maritalStatu">Selecione seu estado civil</label>
+                <label for="userMaritalState">Selecione seu estado civil</label>
                 <!-- Lista suspensa -->
-                <select name="maritalStatu" id="suspenseList_id">
+                <select id="userMaritalState" name="maritalState">
                     <option value="notInformed">Selecione</option>
                     <option value="casado">Casado</option>
                     <option value="solteiro">Solteiro</option>
@@ -59,7 +59,7 @@
                 </select>
                 <br>
                 <label for="userState">Selecione seu estado</label>
-                <select name="userState" required>
+                <select id="userState" name="state" required>
                     <option value="notInformed">Selecione</option>
                     <option value="acre">Acre</option>
                     <option value="alagoas">Alagoas</option>
@@ -97,12 +97,12 @@
 
             <fieldset>
                 <legend>Redes sociais</legend>
-                <input type="checkbox" name="social" value="instagram">
-                <label for="social">instagram</label>
-                <input type="checkbox" name="social" value="facebook">
-                <label for="social">Facebook</label>
-                <input type="checkbox" name="social" value="linkedin">
-                <label for="social">linkedin</label>
+                <input id="instagram" type="checkbox" name="social" value="instagram">
+                <label for="instagram">instagram</label>
+                <input id="facebook" type="checkbox" name="social" value="facebook">
+                <label for="facebook">Facebook</label>
+                <input id="linkedin" type="checkbox" name="social" value="linkedin">
+                <label for="linkedin">linkedin</label>
             </fieldset>
             <button type="submit">Enviar</button>
         </form>
