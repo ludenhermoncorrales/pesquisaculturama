@@ -30,7 +30,8 @@
                 <input id="email" type="email" name="userEmail" placeholder="E-mail" required>
                 <br>
                 <label for="phoneNumber">Telefone</label>
-                <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9] {11}" placeholder="Numero celular">
+                <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9] {11}"
+                    placeholder="Numero celular">
                 <br>
                 <label for="image">Upload de foto</label>
                 <!-- para definir qual tipo de imagem: accept="image/png, image/jpeg"  -->
@@ -89,7 +90,7 @@
                     <option value="sergipe">Sergipe</option>
                     <option value="tocantins">Tocantins</option>
                 </select>
-                
+
                 <label for="userCity"></label>
                 <input type="text" name="userCity" placeholder="Digite sua cidade" required>
 
@@ -115,7 +116,22 @@
                 <br>
                 <label for="userColor">Cor favorita</label>
                 <input type="color" name="userColor" id="userColor">
-                
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Opinião de usuário</legend>
+
+                <input type="radio" id="otimo" name="userOpinion" value="otimo" required>
+                <label for="otimo">Ótimo  </label>
+                <input type="radio" id="bom" name="userOpinion" value="bom" required>
+                <label for="bom">Bom  </label>
+                <input type="radio" id="ruim" name="userOpinion" value="ruim" required>
+                <label for="ruim">Ruim  </label>
+
+                <br>
+                <label for="userOpinionDescription">Descreva sua opnião</label><br>
+                <textarea id="userOpinionDescription" placeholder="Opinião de usuário"></textarea>
             </fieldset>
             <button type="submit">Enviar</button>
         </form>
