@@ -41,7 +41,8 @@
                     <br>
                     <label for="phoneNumber">Telefone</label>
                     <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}"
-                        placeholder="Numero celular" required>
+                        placeholder="Numero celular" aria-describedby="phoneHelp" required>
+                        <small id="phoneHelp">Preencha o número de telefone no formato: DDD + Número sem hifens ou espaços</small>
                     <br>
                     <label for="image">Upload de foto</label>
                     <!-- para definir qual tipo de imagem: accept="image/png, image/jpeg"  -->
